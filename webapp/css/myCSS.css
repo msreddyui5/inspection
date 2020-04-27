@@ -1,0 +1,6 @@
+.anubhav tr:nth-child(odd){
+	background-color: aqua;
+}
+.anubhav tr:nth-child(even){
+	background-color:lime;
+}

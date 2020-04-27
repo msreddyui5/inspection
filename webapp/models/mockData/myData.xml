@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<data>
+	<empTab>
+		<row>
+			<empNo>9000</empNo>
+			<eName>Riyaz Ahemad</eName>
+			<salary>80000</salary>
+			<currency>RYL</currency>
+			<smoker>false</smoker>
+			<mStat>Married</mStat>
+			<gender>male</gender>
+			<rating>4</rating>
+		</row>
+		<row>
+			<empNo>9001</empNo>
+			<eName>Veronica</eName>
+			<salary>8700</salary>
+			<currency>EUR</currency>
+			<smoker>true</smoker>
+			<mStat>Single</mStat>
+			<gender>female</gender>
+			<rating>4</rating>
+		</row>
+		<row>
+			<empNo>9002</empNo>
+			<eName>Richard</eName>
+			<salary>7800</salary>
+			<currency>USD</currency>
+			<smoker>false</smoker>
+			<mStat>Single</mStat>
+			<gender>male</gender>
+			<rating>3</rating>
+		</row>
+		<row>
+			<empNo>9003</empNo>
+			<eName>Rohan</eName>
+			<salary>200000</salary>
+			<currency>INR</currency>
+			<smoker>false</smoker>
+			<mStat>Married</mStat>
+			<gender>male</gender>
+			<rating>5</rating>
+		</row>
+		<row>
+			<empNo>9004</empNo>
+			<eName>Smitha</eName>
+			<salary>4785</salary>
+			<currency>JPY</currency>
+			<smoker>false</smoker>
+			<mStat>Single</mStat>
+			<gender>female</gender>
+			<rating>3</rating>
+		</row>
+	</empTab>
+</data>

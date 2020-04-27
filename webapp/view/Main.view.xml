@@ -1,0 +1,104 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" 
+			xmlns:t="sap.ui.table"
+		    xmlns:f="sap.ui.layout.form" xmlns="sap.m" controllerName="oft.fin.ar.controller.Main"
+			xmlns:html="http://www.w3.org/1999/xhtml">
+	<t:Table id="idTable" rows="{/empTab}" selectionMode="Single" visibleRowCount="4" rowSelectionChange="onSelect">
+		<t:toolbar>
+			<Toolbar>
+				<Button text="add column" press="onAddCol"></Button>
+			</Toolbar>
+		</t:toolbar>
+		<t:columns>
+			<t:Column>
+				<t:label>
+					<Text text="{i18n>XTXT_EMPNO}"></Text>
+				</t:label>
+				<t:template>
+					<Text text="{empNo}"></Text>
+				</t:template>
+			</t:Column>
+			<t:Column>
+				<t:label>
+					<Text text="{i18n>XTXT_ENAME}"></Text>
+				</t:label>
+				<t:template>
+					<Input value="{
+						path: 'eName',
+						formatter: '.formatter.convertNames'
+					}"></Input>
+				</t:template>
+			</t:Column>
+			<t:Column>
+				<t:label>
+					<Text text="{i18n>XTXT_SAL}"></Text>
+				</t:label>
+				<t:template>
+					<!--<Text text="{salary} {currency}"></Text>-->
+					<Text text="{
+						parts: [{path: 'salary'},{path: 'currency'}],
+						formatter: '.formatter.formatCurr'
+					}"></Text>
+				</t:template>
+			</t:Column>
+			<t:Column>
+				<t:label>
+					<Text text="{i18n>XTXT_SMK}"></Text>
+				</t:label>
+				<t:template>
+					<CheckBox selected="{path: 'smoker', formatter: 
+					'.formatter.convertToBoolean'}"></CheckBox>
+				</t:template>
+			</t:Column>
+			<t:Column>
+				<t:label>
+					<Text text="{i18n>XTXT_GEN}"></Text>
+				</t:label>
+				<t:template>
+					<Image width="30px" height="30px"></Image>
+				</t:template>
+			</t:Column>
+			<t:Column>
+				<t:label>
+					<Text text="{i18n>XTXT_MSTAT}"></Text>
+				</t:label>
+				<t:template>
+					<Select selectedKey="{mStat}">
+						<core:Item text="Single" key="Single"></core:Item>
+						<core:Item text="Married" key="Married"></core:Item>
+						<core:Item text="Divorced" key="Divorced"></core:Item>
+					</Select>
+				</t:template>
+			</t:Column>
+			<t:Column>
+				<t:label>
+					<Text text="{i18n>XTXT_RAT}"></Text>
+				</t:label>
+				<t:template>
+					<!--<RatingIndicator value="{rating}"></RatingIndicator>-->
+				</t:template>
+			</t:Column>
+		</t:columns>
+	</t:Table>
+	
+	
+	<f:SimpleForm editable="true" id="anubhavForm">
+		<f:content>
+			<Label text="{i18n>XTXT_EMPNO}"></Label>
+			<Input width="200px" value="{/empStr/empNo}"></Input>
+			<Label text="{i18n>XTXT_ENAME}"></Label>
+			<Input width="450px" value="{/empStr/eName}"></Input>
+			<Label text="{i18n>XTXT_SAL}"></Label>
+			<!--<Input width="200px" id="idSalary"
+			value="{= ${/empStr/eName} === 'Anubhav' ? ${/empStr/salary} + 500 : ${/empStr/salary} }" 
+			enabled="{= ${/empStr/eName} === 'Anubhav' ? false : true }"></Input>-->
+			<Input value="{/empStr/salary}"></Input>
+			<Label text="Currency"></Label>
+			<Input value="{/empStr/currency}"></Input>
+			<Button text="Add this as row" press="onAddRow"></Button>
+			<!--<Input width="150px" id="idCurr" value="" enabled="{/empStr/shivang}"></Input>-->
+		</f:content>		
+	</f:SimpleForm>
+	<Button text="{i18n>XBUT_MAGIC}" press="onMagic"></Button>
+	<Button text="{i18n>XBUT_FLIP}" press="onFlip"></Button>
+	<Button text="Call some server" press="onRequest"></Button>
+</mvc:View>

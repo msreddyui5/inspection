@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+		        data-sap-ui-libs="sap.m, sap.ui.table"
+		        data-sap-ui-theme="sap_bluecrystal"
+		        data-sap-ui-resourceroots='
+		        { "oft.fin.ar" : "./" }
+		        '
+		        data-sap-ui-bindingSyntax='complex'
+		        ></script>
+		<link rel="stylesheet" href="css/myCSS.css"  type="text/css" />
+		<script>
+			var oViewXML = new sap.ui.view({
+				id:"idXMLView",
+				viewName: "oft.fin.ar.view.Main",
+				type: sap.ui.core.mvc.ViewType.XML
+			});
+			oViewXML.placeAt("content");
+		</script>
+	</head>
+	<body class="sapUiBody">
+		<div id="content"></div>
+	</body>
+</html>

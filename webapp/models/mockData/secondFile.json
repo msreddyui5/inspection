@@ -1,0 +1,61 @@
+{
+	"empStr": {
+		"empNo": "0001",
+		"eName": "Jessica",
+		"salary": 7999999999999,
+		"currency": "USD",
+		"shivang": true
+	},
+	"empTab": [{
+			"empNo": 1000,
+			"eName": "Syed",
+			"salary": 8500,
+			"currency": "RYL",
+			"smoker": false,
+			"gender": "male",
+			"mStat": "Single",
+			"rating": 5
+		},
+		{
+			"empNo": 1001,
+			"eName": "Jessica",
+			"salary": 8700,
+			"currency": "USD",
+			"smoker": true,
+			"gender": "female",
+			"mStat": "Married",
+			"rating": 4
+		},
+		{
+			"empNo": 1002,
+			"eName": "Bilal",
+			"salary": 7465,
+			"currency": "RYL",
+			"smoker": true,
+			"gender": "male",
+			"mStat": "Single",
+			"rating": 3
+		},
+		{
+			"empNo": 1003,
+			"eName": "Venkata",
+			"salary": 180000,
+			"currency": "INR",
+			"smoker": false,
+			"gender": "male",
+			"mStat": "Married",
+			"rating": 4
+		},
+		{
+			"empNo": 1004,
+			"eName": "Sonia",
+			"salary": 45000,
+			"currency": "EUR",
+			"smoker": false,
+			"gender": "female",
+			"mStat": "Married",
+			"rating": 5
+		}
+
+	]
+}
