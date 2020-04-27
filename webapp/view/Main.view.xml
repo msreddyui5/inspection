@@ -101,5 +101,5 @@
 	<Button text="{i18n>XBUT_MAGIC}" press="onMagic"></Button>
 	<Button text="{i18n>XBUT_FLIP}" press="onFlip"></Button>
 	<Button text="Call some server" press="onRequest"></Button>
-	<Button text="Test Button"   />
+	<Button text="pratice for it"   />
 </mvc:View>
